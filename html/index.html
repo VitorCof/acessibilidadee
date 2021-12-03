@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site sobre mim, minha carreira e projetos ja feitos">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="../img/icons/login.png">
+    <meta name="keywords" content="author">
+    <meta name="author" content="Vitor José">
+
+    <link rel="stylesheet" href="../css/contrast.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <title>Vitor José</title>
+</head>
+<body id="inicio">
+    <header class="header_conatiner">
+       <h1 class="degrade">
+           Vitor J.
+       </h1>
+       <div class="mobile-menu">
+           <div class="line1"></div>
+           <div class="line2"></div>
+           <div class="line3"></div>
+       </div>
+
+        <nav>
+            <ul id="atalhos" class="nav">
+                <li><a href="#inicio" id="acs-inicio" accesskey="1" title="Alt 1">Inicio</a></li>
+                <li><a href="#sobre" id="acs-sobre" accesskey="2" title="Alt 2">Sobre</a></li>
+                <li><a href="#experiencia" id="acs-experiencia" accesskey="3" title="Alt 3">Experiencia</a></li>
+                <li><a href="#rodape" id="acs-rodape" accesskey="4" title="Alt 4">Rodapé</a></li>
+                <li><a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto contraste</a></li>
+            </ul>
+            <li>
+                <div class="mais" title="Aumenta Fonte (ALT +)" aria-hiddnen="true" accesskey="+" onclick="aumentar()"></div>
+                <div class="normal" title="Tamanho 100%" aria-hidden="true" accesskey="0"></div>
+                <div class="menos" title="Diminui Fonte (ALT -)" aria-hiddnen="true" accesskey="-" onclick="diminuir()"></div>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <section id="topo">
+            <figure>
+                <img class="rounded-full w-48 h-48 object-center absolute left-1/4 top-16" src="../img/foto/vitor.jpg" alt="Foto minha, Vitor José estou com uma camisa verde, uso oculos e tenho bigode" longdesc="" >
+            </figure>
+            <h1 class="absolute left-2/4 top-16 text-xl font-serif text-white">Meu nome é Vitor José</h1>
+            <h2 class="absolute left-2/4 top-24 degrade1 text-3xl font-serif text-xl">Desenvolvedor Front-end/ Técnico de Informática</h2>
+        </section>
+        <ul id="rede" class="flex absolute left-2/4 top-32 w-32" title="Midias Sociais">
+            <li><a href="#"><i class="fa fa-facebook m-7  " aria-hiddnen="true" title="Facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter m-7 " aria-hiddnen="true" title="Twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin m-7 " aria-hiddnen="true" title="Linkedin"></i></a></li>
+        </ul>
+        <hr class="absolute top-72 left-48 w-3/4 ">
+        <section id="sobre" class="flex mt-60">
+            <div  class="bg-black h-full w-full">
+              <h1 class="text-white text-3xl text-center p-11 degrade1">Sobre Mim</h1>
+              <p class="text-white text-lg ml-20 mr-20">Sou um pessoa muito amigavel que curte muito tecnologia e jogos, gosto de aprender coisas
+                novas, e colocar elas em pratica, busco chegar aos meus objetivos sem passar por cima de ninguém.</p>
+                <p class="text-white text-lg ml-20 mr-20">"O pensamento positivo pode vir naturalmente para alguns, mas também pode ser aprendido e cultivado, mude seus pensamentos e você mudará seu mundo." (Norman Vicent Peale)</p>
+
+              <h2 id="contato" class="text-green-700 text-xl ml-20  mt-20 font-mono">Dados Pessoais</h2>  
+              <p class="text-green-700 text-lg ml-24  mt-2 font-mono">Celular:</p> 
+              <p class="text-green-700 text-lg ml-24  mt-2 font-mono">Email:</p>
+              <p class="text-green-700 text-lg ml-24  mt-2 font-mono">Site:</p>
+              <p class="text-green-700 text-lg ml-24  mt-2 font-mono">Cidade:</p>
+
+              <p class="text-white text-lg ml-48 absolute cell font-mono">(16)99193-6522</p>
+              <p class="text-white text-lg ml-48 absolute ema font-mono">vitorjosetecninfo@gmail.com</p>
+              <p class="text-white text-lg ml-48 absolute site font-mono">vitorcomp.com</p>
+              <p class="text-white text-lg ml-48 absolute cid font-mono">Taquaritinga,SP</p>
+              <figure>
+                  <img class="h-60 w-60 absolute img_lo " src="../img/pro.jpg" alt="Imagen de um processador azul, com raios azuis também">
+              </figure>
+
+              <div class="about interest">
+                <h2 class="text-white text-xl ml-48 absolute inter" id="interesses">Interesses</h2>
+                <ul>
+                    <li><i class="fa fa-gamepad mt-24" aria-hidden="true"></i><br/>Jogos</li>
+                    <li><i class="fa fa-book mt-24" aria-hidden="true"></i><br/>Leitura</li>
+                    <li><i class="fa fa-film mt-24" aria-hidden="true"></i><br/>Filmes</li>
+                    <li><i class="fa fa-soccer-ball-o mt-24" aria-hidden="true"></i><br/>Esportes</li>
+                </ul>
+            </div>
+        </section>
+        <section class="flex">
+            <div class="bg-gray-900 h-full w-full">
+                <h2 class="text-green-700 text-xl ml-20 mt-2 font-mono">Educação</h2>  
+                <p class="text-blue-800 text-lg ml-24  mt-4 font-mono">2021-20..</p> 
+                <p class="text-blue-800 text-lg ml-24  mt-9 font-mono">2018-2020</p>
+                <p class="text-blue-800 text-lg ml-24  mt-8 mb-8 font-mono">2014-2017</p>
+  
+                <p class="text-white text-lg ml-24 absolute si font-mono">Sistema para Internet</p>
+                <p class="text-white text-lg ml-24 absolute et font-mono">ETIM Informática</p>
+                <p class="text-white text-lg ml-24 absolute fun font-mono">Fundamental II</p>
+                <p class="text-white text-lg ml-24 absolute fa font-mono">Fatec Taquaritinga</p>
+                <p class="text-white text-base ml-24 absolute ete font-mono">Etec "Dr Adail Nunes da Silva</p>
+                <p class="text-white text-lg ml-24 absolute sil font-mono">Francisco Silveira Coelho</p>
+                
+                <h2 id="experiencia" class="text-green-700 text-xl ml-20 mt-20 font-mono">Experiencia</h2>
+                <p class="text-white ml-24 fint-nono">Por Enquanto não tenho experiencia na area.</p>
+
+                <h2 class="text-green-700 text-xl absolute hal font-mono">Habilidade</h2> 
+                <div class="pieContainer absolute hal1">
+                    <div class="pieBackground"></div>
+                    <div id="pieSlice1" class="hold"><div class="pie"></div></div>
+                    <div id="pieSlice2" class="hold"><div class="pie"></div></div>
+                    <div id="pieSlice3" class="hold"><div class="pie"></div></div>
+                    <div id="pieSlice4" class="hold"><div class="pie"></div></div>
+                    <div id="pieSlice5" class="hold"><div class="pie"></div></div>
+                    <div id="pieSlice6" class="hold"><div class="pie"></div></div>
+                    <div class="innerCircle"><div class="content"><b>Habilidade</b><br>de Informática</div></div>
+                </div>
+                <ul class="absolute hal2 text-white">
+                    <li style="color:#ffd700;">Progamação Web</li>
+                    <li style="color:#0a0;">Progamação</li>
+                    <li style="color:#f80;">Banco de Dados Sql</li>
+                    <li style="color:#a04;">Banco de Dados noSql</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer id="rodape" class="h-4">
+        <h1 class="text-center text-white">© 2021 Vitor Teccof</h1>
+    </footer>
+
+    <script src="../js/contrast.js"></script>
+    <script src="../js/funcoes.js"></script>
+    <script src="../js/mobile-navbar.js"></script>
+    
+</body>
+</html>

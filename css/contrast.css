@@ -1,0 +1,87 @@
+
+.contrast ol,
+.contrast main,
+.contrast aside,
+.contrast article {
+    background: grey !important;
+    color: black !important;
+}
+.contrast footer{
+    background-color: #023E8A;
+    color: black;
+    height: 25px;
+}
+.contrast header{
+   background-color:#03045E ;
+}
+.contrast li #atalhos{
+    background-color:#03045E;
+}
+.contrast li #rede{
+    background-color:#03045E;
+}
+.contrast{
+    background-color:#00B4D8;
+}
+.contrast div{
+    background-color:#48CAE4 ;
+}
+
+
+.contrast h1,
+.contrast h2,
+.contrast h3,
+.contrast h4,
+.contrast h5,
+.contrast h6,
+.contrast p,
+.contrast label,
+.contrast strong,
+.contrast em,
+.contrast cite,
+.contrast q,
+.contrast i,
+.contrast b,
+.contrast u,
+.contrast span {
+    color: black !important;
+}
+
+.contrast a{
+    color: green !important;
+}
+
+.contrast button,
+.contrast input[type=button],
+.contrast input[type=reset],
+.contrast input[type=submit] {
+    background: white !important;
+    color: green !important;
+    border: none !important;
+}
+
+.contrast input[type=text],
+.contrast input[type=password],
+.contrast input[type=url],
+.contrast input[type=search],
+.contrast input[type=email],
+.contrast input[type=tel],
+.contrast input[type=date],
+.contrast input[type=month],
+.contrast input[type=week],
+.contrast input[type=datetime],
+.contrast input[type=datetime-local],
+.contrast textarea,
+.contrast input[type=number] {
+    background: white !important;
+    border: 1px solid black !important;
+    color: black !important;
+}
+
+.contrast img.on-contrast-force-gray {
+    filter: grayscale(100%) contrast(120%);
+}
+
+.contrast img.on-contrast-force-white {
+    filter: brightness(0) invert(1);
+}
